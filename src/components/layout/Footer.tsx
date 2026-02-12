@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, CheckCircle } from "lucide-react";
-import Button from "@/components/ui/Button";
 
 const footerLinks = {
     quickLinks: [

@@ -1,6 +1,7 @@
 import Button from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import { PlayCircle, ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero_updated.png";
 
 export default function Hero() {
     return (
@@ -71,7 +72,7 @@ export default function Hero() {
                     <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-primary/10 border-8 border-white aspect-[4/5] group">
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 z-10"></div>
                         <img
-                            src="/images/hero_teacher.png"
+                            src={heroImage}
                             alt="Teacher in classroom"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />

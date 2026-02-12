@@ -44,7 +44,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 ref={ref}
                 whileTap={{ scale: 0.98 }}
                 className={classes}
-                {...props}
+                {...(props as any)}
             >
                 {children}
                 {icon && <span className="ml-1">{icon}</span>}

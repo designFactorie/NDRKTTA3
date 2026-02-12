@@ -14,7 +14,7 @@ interface CourseData {
     description: string;
     modules: string[];
     certification: string;
-    icon: JSX.Element;
+    icon: React.ReactNode;
 }
 
 const courses: Record<string, CourseData[]> = {

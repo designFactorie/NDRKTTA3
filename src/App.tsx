@@ -8,7 +8,7 @@ import Contact from "@/pages/Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/NDRKTTA3">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />

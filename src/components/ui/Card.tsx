@@ -16,7 +16,7 @@ export default function Card({ children, className, hoverEffect = true, ...props
                 "bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-sm transition-all duration-300",
                 className
             )}
-            {...props}
+            {...(props as any)}
         >
             {children}
         </motion.div>

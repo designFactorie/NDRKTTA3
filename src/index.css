@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors - Deep Authority Blue & Academic Gold */
+  --color-primary-dark: #0F172A;
+  /* Slate 900 - Deepest Blue */
+  --color-primary: #1E293B;
+  /* Slate 800 */
+  --color-primary-light: #334155;
+  /* Slate 700 */
+
+  --color-accent-gold: #D4AF37;
+  /* Metallic Gold */
+  --color-accent-gold-light: #F4C430;
+  /* Saffron/Bright Gold */
+  --color-accent-gold-dark: #AA8C2C;
+
+  --color-accent-red: #E11D48;
+  /* Rose 600 - Alert/Action */
+  --color-neutral-light: #F8FAFC;
+  /* Slate 50 - Background */
+  --color-neutral-white: #FFFFFF;
+
+  --color-text-dark: #0F172A;
+  --color-text-muted: #64748B;
+  --color-text-light: #F8FAFC;
+
+  /* Typography */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  /* Animations */
+  --animate-blob: blob 7s infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-light text-text-dark font-body font-medium antialiased selection:bg-accent-gold selection:text-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-extrabold text-primary-dark;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+
+  .glass-button {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all;
+  }
+
+  .text-gradient-gold {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-accent-gold-dark via-accent-gold to-accent-gold-light;
+  }
+}

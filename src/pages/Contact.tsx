@@ -19,7 +19,7 @@ export default function Contact() {
 
                             <div className="relative z-10">
                                 <h6 className="text-accent-gold font-bold uppercase tracking-widest mb-4">Contact Us</h6>
-                                <h1 className="text-5xl md:text-6xl font-heading font-bold mb-8 leading-tight">
+                                <h1 className="text-5xl md:text-6xl font-heading font-bold mb-8 leading-tight text-white">
                                     Let's Start a <br />Conversation
                                 </h1>
                                 <p className="text-gray-300 text-lg leading-relaxed max-w-md">
@@ -33,7 +33,7 @@ export default function Contact() {
                                         <MapPin className="text-accent-gold" size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-lg mb-1">Visit Us</h4>
+                                        <h4 className="font-bold text-lg mb-1 text-white">Visit Us</h4>
                                         <p className="text-gray-300">123 Education Lane, Koramangala<br />Bangalore, Karnataka 560034</p>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@ export default function Contact() {
                                         <Mail className="text-accent-gold" size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-lg mb-1">Email Us</h4>
+                                        <h4 className="font-bold text-lg mb-1 text-white">Email Us</h4>
                                         <p className="text-gray-300 text-lg">admissions@ndrk.edu</p>
                                         <p className="text-gray-400 text-sm">info@ndrk.edu</p>
                                     </div>
@@ -54,7 +54,7 @@ export default function Contact() {
                                         <Phone className="text-accent-gold" size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-lg mb-1">Call Us</h4>
+                                        <h4 className="font-bold text-lg mb-1 text-white">Call Us</h4>
                                         <p className="text-gray-300 text-xl font-medium">+91 98765 43210</p>
                                     </div>
                                 </div>

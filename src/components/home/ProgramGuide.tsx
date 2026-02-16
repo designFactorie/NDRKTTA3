@@ -34,7 +34,7 @@ export default function ProgramGuide() {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
-                        <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+                        <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">
                             What Guides <br />
                             <span className="text-accent-gold">Our Programme</span>
                         </h2>

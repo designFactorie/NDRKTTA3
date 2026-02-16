@@ -41,7 +41,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
                     {/* Brand Column */}
                     <div className="lg:col-span-2">
-                        <h2 className="text-3xl font-heading font-bold mb-4">NDRK Teacher Training Academy</h2>
+                        <h2 className="text-3xl font-heading font-bold mb-4 text-white">NDRK Teacher Training Academy</h2>
                         <p className="text-gray-300 mb-6 max-w-sm">
                             Empowering the next generation of educators with world-class training, practical skills, and global certification.
                         </p>
@@ -60,7 +60,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-lg font-bold mb-6 border-b-2 border-accent-gold inline-block pb-1">Quick Links</h3>
+                        <h3 className="text-lg font-bold mb-6 border-b-2 border-accent-gold inline-block pb-1 text-white">Quick Links</h3>
                         <ul className="space-y-3">
                             {footerLinks.quickLinks.map((link) => (
                                 <li key={link.name}>
@@ -74,7 +74,7 @@ export default function Footer() {
 
                     {/* Programs */}
                     <div>
-                        <h3 className="text-lg font-bold mb-6 border-b-2 border-accent-gold inline-block pb-1">Programs</h3>
+                        <h3 className="text-lg font-bold mb-6 border-b-2 border-accent-gold inline-block pb-1 text-white">Programs</h3>
                         <ul className="space-y-3">
                             {footerLinks.programs.map((link) => (
                                 <li key={link.name}>
@@ -88,7 +88,7 @@ export default function Footer() {
 
                     {/* Contact */}
                     <div>
-                        <h3 className="text-lg font-bold mb-6 border-b-2 border-accent-gold inline-block pb-1">Contact Us</h3>
+                        <h3 className="text-lg font-bold mb-6 border-b-2 border-accent-gold inline-block pb-1 text-white">Contact Us</h3>
                         <ul className="space-y-4 text-gray-300">
                             <li>
                                 <p className="font-medium text-white">NDRK Teacher Training Academy</p>

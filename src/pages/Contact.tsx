@@ -6,7 +6,7 @@ import { MapPin, Phone, Mail, Send } from "lucide-react";
 export default function Contact() {
     return (
         <div className="min-h-screen flex flex-col bg-neutral-light">
-            <Navbar />
+            <Navbar variant="light" />
 
             <main className="flex-grow pt-32 pb-20">
                 <div className="container mx-auto px-6">

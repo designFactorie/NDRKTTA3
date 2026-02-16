@@ -10,13 +10,13 @@ export default function PlacementJourney() {
     ];
 
     return (
-        <Section className="bg-primary-dark text-white overflow-hidden relative">
+        <Section className="bg-primary-dark text-white overflow-hidden relative pt-12 md:pt-12">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="text-center mb-20">
-                    <h2 className="text-4xl font-heading font-bold mb-4">Your Roadmap to Success</h2>
-                    <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mt-4 mb-12 leading-tight">
+                <div className="text-center mb-12 mt-10">
+                    <h2 className="text-xl md:text-2xl font-heading font-medium text-accent-gold mb-2 tracking-widest uppercase">Your Roadmap to Success</h2>
+                    <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-12 leading-tight">
                         Five steps to your <span className="text-accent-gold">dream career</span>
                     </h2>
                 </div>

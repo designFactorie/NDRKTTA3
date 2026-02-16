@@ -1,38 +1,24 @@
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
-import { ArrowUpRight, Globe, GraduationCap, Layout, Sparkles } from "lucide-react";
+import { ArrowUpRight, GraduationCap, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ProgramsShowcase() {
     const programs = [
         {
-            title: "Early Childhood Care",
+            title: "Certificate in Teaching Excellence",
             icon: <Sparkles size={32} />,
-            desc: "Nurture young minds with our comprehensive ECCE diploma program.",
+            desc: "A comprehensive 6-month programme for early-career educators, focusing on pedagogy, child development, and classroom management.",
             color: "bg-rose-50 text-rose-600",
-            link: "/courses?tab=early-childhood"
+            link: "/courses?tab=teaching-excellence"
         },
         {
-            title: "Cambridge Certificate",
-            icon: <Globe size={32} />,
-            desc: "International Certificate in Teaching & Learning (CICTL) for global educators.",
-            color: "bg-blue-50 text-blue-600",
-            link: "/courses?tab=cambridge-cert"
-        },
-        {
-            title: "Cambridge Diploma",
+            title: "Certificate in School Leadership & Management",
             icon: <GraduationCap size={32} />,
-            desc: "Advanced Diploma in Teaching & Learning (CIDTL) for experienced teachers.",
-            color: "bg-purple-50 text-purple-600",
-            link: "/courses?tab=cambridge-dip"
-        },
-        {
-            title: "Certificate Courses",
-            icon: <Layout size={32} />,
-            desc: "Specialized workshops in CBSE, IGCSE, IB, and Design Thinking.",
-            color: "bg-amber-50 text-amber-600",
-            link: "/courses?tab=certificates"
-        },
+            desc: "A 4-month advanced programme for school leaders, covering strategic planning, team management, and educational innovation.",
+            color: "bg-blue-50 text-blue-600",
+            link: "/courses?tab=school-leadership"
+        }
     ];
 
     return (
@@ -49,7 +35,7 @@ export default function ProgramsShowcase() {
                 <Button variant="outline" className="flex-shrink-0" icon={<ArrowUpRight size={20} />} href="/courses">View All Courses</Button>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 {programs.map((prog, i) => (
                     <Link
                         key={i}
